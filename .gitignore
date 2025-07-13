@@ -1,0 +1,59 @@
+# General Python ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+build/
+develop-eggs/
+dist/
+eggs/
+*.egg-info/
+.installed.txt
+lib/
+lib64/
+venv/
+env/
+# These can be created by Pip
+*.egg
+.tox/
+.coverage
+.cache
+.pytest_cache/
+htmlcov/
+.nox/
+
+# IDE and Editor ignores
+.vscode/
+.idea/
+*.swp
+*.bak
+*.swo
+
+# OS generated files
+.DS_Store
+.Trashes
+Thumbs.db
+
+# --- Specific to your project (Discord Bot with Google Cloud/Gemini) ---
+
+# Google Cloud Service Account Key
+# This is CRITICAL. NEVER commit your service account key.
+# Replace 'your-service-account-key.json' with the actual name of your JSON key file.
+# If you used .env1 for the token as shown in the error, you should ignore it too.
+your-service-account-key.json 
+.env1 
+*.json # Only if ALL .json files are secrets or generated
+
+# Environment variables file (if you use a .env file for secrets)
+# This is HIGHLY recommended for storing sensitive information like Discord Bot Token.
+.env
+
+# Other potential sensitive files or temporary files
+*.log
+*.sqlite3 # If you use SQLite for database
+
+# Discord Bot related (if any temporary files are generated)
+# e.g., if your bot creates temporary audio files or images
+# temp_files/
+# output/
